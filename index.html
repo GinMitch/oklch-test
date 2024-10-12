@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OKLCH Test</title>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .wrapper {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .container {
+      width: 100vw;
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .c-type, .c-name, .l-next {
+      width: fit-content;
+      height: fit-content;
+      padding: 0.5rem;
+      font-weight: 400;
+      font-size: 0.8rem;
+      border-radius: 0.5rem;
+    }
+    .c-type, .c-name {
+      cursor: default;
+    }
+    .l-next, .l-next:visited {
+      text-decoration: none;
+    }
+
+    #color_1 .hex {
+      background-color: #ff5e82;
+    }
+    #color_1 .lch {
+      background-color: oklch(71.66% 0.2059 11.37);
+    }
+    #color_1 .container * {
+      color: #5effdb;
+      background-color: rgba(255, 172, 191, 0.5);
+    }
+
+    #color_2 .hex {
+      background-color: #00d494;
+    }
+    #color_2 .lch {
+      background-color: oklch(76.11% 0.1905 165.04);
+    }
+    #color_2 .container * {
+      color: #d40040;
+      background-color: rgba(75, 255, 201, 0.5);
+    }
+
+    #color_3 .hex {
+      background-color: #d787ff;
+    }
+    #color_3 .lch {
+      background-color: oklch(75.22% 0.1872 312.46);
+    }
+    #color_3 .container * {
+      color: #afff87;
+      background-color: rgba(241, 213, 255, 0.5);
+    }
+
+    #color_4 .hex {
+      background-color: #45bbff;
+    }
+    #color_4 .lch {
+      background-color: oklch(75.82% 0.1466 239.82);
+    }
+    #color_4 .container * {
+      color: #ff8945;
+      background-color: rgba(147, 216, 255, 0.5);
+    }
+
+    #color_5 .hex {
+      background-color: #ffe6e0;
+    }
+    #color_5 .lch {
+      background-color: oklch(94.81% 0.0335 32.58);
+    }
+    #color_5 .container * {
+      color: #e0f9ff;
+      background-color: rgba(255, 167, 146, 0.5);
+    }
+  </style>
+</head>
+<body>
+
+<section class="wrapper" id="color_1">
+  <div class="container hex">
+    <span class="c-type">HEX</span>
+    <span class="c-name">Crayola</span>
+  </div>
+  <div class="container lch">
+    <span class="c-type">OKLCH</span>
+    <a class="l-next" href="#color_2">Next color</a>
+  </div>
+</section>
+
+<section class="wrapper" id="color_2">
+  <div class="container hex">
+    <span class="c-type">HEX</span>
+    <span class="c-name">Emerald</span>
+  </div>
+  <div class="container lch">
+    <span class="c-type">OKLCH</span>
+    <a class="l-next" href="#color_3">Next color</a>
+  </div>
+</section>
+
+<section class="wrapper" id="color_3">
+  <div class="container hex">
+    <span class="c-type">HEX</span>
+    <span class="c-name">Heliotrope</span>
+  </div>
+  <div class="container lch">
+    <span class="c-type">OKLCH</span>
+    <a class="l-next" href="#color_4">Next color</a>
+  </div>
+</section>
+
+<section class="wrapper" id="color_4">
+  <div class="container hex">
+    <span class="c-type">HEX</span>
+    <span class="c-name">Deep Sky</span>
+  </div>
+  <div class="container lch">
+    <span class="c-type">OKLCH</span>
+    <a class="l-next" href="#color_5">Next color</a>
+  </div>
+</section>
+
+<section class="wrapper" id="color_5">
+  <div class="container hex">
+    <span class="c-type">HEX</span>
+    <span class="c-name">Misty Rose</span>
+  </div>
+  <div class="container lch">
+    <span class="c-type">OKLCH</span>
+    <a class="l-next" href="#color_1">Next color</a>
+  </div>
+</section>
+
+</body>
+</html>
